@@ -1,14 +1,13 @@
-# to  make sure entries are only letters, not numbers
+# to  make sure entries are only letters, not numbers and allow re-entry
 def validation(user_input) -> None:
-    message1 = user_input.replace(" ", "")  
     while not message1.isalpha():
         user_input = input("Enter a valid string: ")
-        message1 = user_input.replace(" ", "")  
+       return user_input
 
 
 message = input("Enter string: ")
 
-validation(message)
+message = validation(message)
 
 
        
