@@ -15,24 +15,6 @@ yes_no_validator('y', 'n', message)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # three options
 
 def valid_3(a, b, c, user_input):
