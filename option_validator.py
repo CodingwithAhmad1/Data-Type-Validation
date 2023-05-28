@@ -1,17 +1,17 @@
-# makes sure you only have 2 options - yes or no
+# makes sure you only have 2 options
 
 def yes_no_validator(a, b, user_input):
     user_input = user_input.lower()
     while user_input != a and user_input != b:
         user_input = input("Please enter a valid option: ")
     if user_input == a:
-        print("You said yes.")
+        print(f"You said {a}.")
     else:
-        print("You said no")
+        print(f"You said {b}")
 
-
-message = input("Would you like  a pizza ('y' or 'n')? ")       
-yes_no_validator('y', 'n', message)
+# yes/no example - can be any two option
+message = input("Would you like  a pizza ('yes' or 'no')? ")       
+yes_no_validator('yes', 'no', message)
 
 
 
@@ -22,15 +22,15 @@ def valid_3(a, b, c, user_input):
     while user_input != a and user_input != b and user_input != c:
         user_input = input("Please enter a valid option: ")
     if user_input == a:
-        print("You chose option 1.")
+        print(f"You chose {a}.")
     elif user_input== b:
-        print("You chose option 2.")
+        print(f"You chose option {b}.")
     else:
         user_input = "b"
-        print("You chose option 3")
+        print(f"You chose option {c}")
         
         
-message1 = input("Would you like  a pizza, burger or pasta ('a' or 'b' or 'c')? ")       
-valid_3('a', 'b', 'c', message1)
+message1 = input("Would you like  a pizza, burger or pasta ('1' or '2' or '3')? ")       
+valid_3('1', '2', '3', message1)
 
     
