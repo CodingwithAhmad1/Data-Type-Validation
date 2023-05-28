@@ -2,7 +2,7 @@
 def validation(user_input) -> None:
     while not message1.isalpha():
         user_input = input("Enter a valid string: ")
-       return user_input
+    return user_input
 
 
 message = input("Enter string: ")
